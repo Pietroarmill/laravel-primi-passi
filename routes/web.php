@@ -22,6 +22,13 @@ Route::get('/', function () {
     return view('home', $data);
 });
 
+Route::get('/blog', function () {
+    $data = [
+        'name' => 'Pietro',
+    ];
+    return view('blog', $data);
+});
+
 Route::get ('/about', function() {
     $data = [
         'name' => 'Pietro',

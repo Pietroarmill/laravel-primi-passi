@@ -8,6 +8,17 @@
 </head>
 <body>
   
+  <header>
+    <ul>
+      <li>
+        <a href="/about">Chi siamo</a>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+    </ul>
+  </header>
+
   <h1>Ciao {{ $name }}, sono la pagina Home che parla.</h1>
 
 
@@ -18,3 +29,10 @@
   @endif
 </body>
 </html>
+
+<style>
+  li {
+    display: inline;
+    margin-right: 1rem;
+  }
+</style>
