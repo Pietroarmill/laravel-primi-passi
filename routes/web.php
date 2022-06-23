@@ -14,5 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $data = [
+        'name' => 'Pietro',
+        'lastname' => 'Armillotta',
+        'isLoggedIn' => false
+    ];
+    return view('home', $data);
+});
+
+Route::get ('/about', function() {
+    $data = [
+        'name' => 'Pietro',
+        'phone' => '+39 333 6787 987',
+        'address' => 'via Monte Napoleone 17'
+    ];
+    return view('about', $data);
 });

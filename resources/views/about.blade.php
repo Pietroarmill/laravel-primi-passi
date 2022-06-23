@@ -8,13 +8,11 @@
 </head>
 <body>
   
-  <h1>Ciao {{ $name }}, sono la pagina Home che parla.</h1>
+  <h2>ciao {{ $name }}, sono la pagina about</h2>
+  <ul>
+    <li>Phone: {{ $phone }}</li>
+    <li>Address: {{ $address }}</li>
+  </ul>
 
-
-  @if ($isLoggedIn)
-      <p>Bentornato {{ $name }}!</p>
-  @else
-      <a href="">Crea un account.</a>
-  @endif
 </body>
 </html>
